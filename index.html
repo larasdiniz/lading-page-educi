@@ -1,0 +1,795 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Educi - Controle Educacional</title>
+    <!-- Link para a versão mais recente do Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Link CSS personalizado -->
+    <link href="ladingPage.css" rel="stylesheet" />
+
+    <!-- Link da fonte do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+
+
+<body class="home-2 grey-bg">
+    <!-- preloader end -->
+    @*<header id="site-header" class="header header-2 white-bg">
+            <div class="container">
+                <div id="header-wrap">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Navbar -->
+                            <nav class="navbar navbar-expand-lg">
+                                <a class="navbar-brand logo" href="">
+                                    <img id="logo-img" class="img-center sticky-logo" src="img/Educi.png" alt="Logo Educi">
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <!-- Left nav -->
+                                    <ul id="main-menu" class="nav navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#home">Início</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#about">Sobre nós</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#service">Serviços</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#product">Produto</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#depoiments">Depoimentos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#contact">Contato</a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <a class="btn btn-theme btn-sm" href="@Url.Action("Index", "Login")" data-text="Acessar">
+                                    <span>A</span><span>ce</span><span>s</span><span>s</span><span>a</span><span>r</span>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>*@
+    <header id="site-header" class="header header-2 white-bg">
+        <div class="container">
+            <div id="header-wrap">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand logo" href="">
+                                <img id="logo-img" class="img-center sticky-logo" src="img/Educi.png" alt="Logo Educi">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <!-- Left nav -->
+                                <ul id="main-menu" class="nav navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#home">Início</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">Sobre nós</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#service">Serviços</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#product">Produto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#depoiments">Depoimentos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contato</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-theme btn-sm" href="@Url.Action("Index", "Login")" data-text="Acessar">
+                                <span>A</span><span>ce</span><span>s</span><span>s</span><span>a</span><span>r</span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="white-bg" style="height: 50px;"></div> <!-- Ajuste a altura conforme necessário -->
+
+
+    <!-- ======= Home Section ======= -->
+    <section id="home" class="fullscreen-banner banner p-0 white-bg">
+        <div class="hero-bg">
+            <img class="img-fluid" src="img/fundo.png" alt="">
+        </div>
+        <div class="align-center p-0">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <!-- Coluna com a imagem -->
+                    <div class="col-lg-6 col-md-12 img-side">
+                        <div class="video-box">
+                            <img class="img-fluid" src="img/PCHOME.png" alt="">
+                            <div class="video-btn video-btn-pos">
+                                <a href="https://www.youtube.com/watch?v=9qe1S9laA3w" class="play-btn popup-youtube">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                                        <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                                    </svg>
+                                </a>
+                                <div class="spinner-eff">
+                                    <div class="spinner-circle circle-1"></div>
+                                    <div class="spinner-circle circle-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coluna com o texto -->
+                    <div class="col-lg-6 col-md-12 text-side">
+                        <h1 class="mb-4 font-weight-normal wow fadeInUp" data-wow-duration="1.5s">
+                            Simplifique a Gestão <span class="font-weight-bold text-uppercase">Educacional</span> Com Educi
+                        </h1>
+                        <p class="lead mb-4 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+                            O sistema ideal para organizar, monitorar e potencializar os resultados da sua instituição.
+                        </p>
+                        <a class="btn btn-theme wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.5s" href="#about" data-text="Saiba Mais">
+                            <span>S</span><span>a</span><span>i</span><span>b</span><span>a</span>
+                            <span> </span><span>M</span><span>a</span><span>i</span><span>s</span>
+                        </a>
+                        <a class="btn btn-dark wow fadeInUp" data-wow-duration="3s" data-wow-delay="0.5s" href="@Url.Action("Index", "Login")" data-text="Acessar Sistema">
+                            <span>A</span><span>ce</span><span>s</span><span>s</span><span>a</span><span>r</span>
+                            <span> </span><span>Sis</span><span>te</span><span>m</span><span>a</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="round-shape"></div>
+    </section>
+
+
+    <div class="white-bg" style="height: 50px;"></div> <!-- Ajuste a altura conforme necessário -->
+
+
+    <!-- ======= Parceiros Section ======= -->
+    <section id="parceiros" class="parceiros white-bg">
+        <div class="container" data-aos="fade-up">
+
+            <!-- Parceiros Slider -->
+            <div class="parceiros-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <!-- Logo Item 1 -->
+                    <div class="swiper-slide">
+                        <div class="logo-item">
+                            <img src="img/logo-gararu.png" class="logo-img" alt="Logo 1">
+                        </div>
+                    </div>
+
+                    <!-- Logo Item 2 -->
+                    <div class="swiper-slide">
+                        <div class="logo-item">
+                            <img src="img/logo-ilhadasflores.jpg" class="logo-img" alt="Logo 2">
+                        </div>
+                    </div>
+
+                    <!-- Logo Item 3 -->
+                    <div class="swiper-slide">
+                        <div class="logo-item">
+                            <img src="img/logo-lourdes.jpg" class="logo-img" alt="Logo 3">
+                        </div>
+                    </div>
+
+                    <!-- Logo Item 4 -->
+                    <div class="swiper-slide">
+                        <div class="logo-item">
+                            <img src="img/logo-pacatuba.png" class="logo-img" alt="Logo 4">
+                        </div>
+                    </div>
+
+                    <!-- Fim de Logo Items -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Fim do Parceiros Slider -->
+        </div>
+    </section>
+    <!-- End Parceiros Section -->
+
+
+
+    <section id="about" class="white-bg">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 order-lg-12">
+                    <img class="img-fluid w-100" src="https://img.freepik.com/free-vector/setup-concept-illustration_114360-382.jpg?t=st=1737148786~exp=1737152386~hmac=d3f449965dff47efb0aa51142d40a94ec31163b27e17fc0d7a7ea65884a8cf8e&w=740" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 md-mt-5 order-lg-1">
+                    <div class="section-title mb-3">
+                        <div class="title-effect title-effect-2">
+                            <div class="ellipse"></div> <i class="la la-info"></i>
+                        </div>
+                        <h2>Objetivos do Sistema Educi:</h2>
+                    </div>
+                    <p class="lead">
+                        O Educi foi desenvolvido para transformar a gestão educacional, integrando processos administrativos, pedagógicos e de comunicação em um único sistema.
+                        Nosso objetivo é otimizar o tempo dos gestores, fortalecer a conexão entre comunidade escolar e garantir a tomada de decisões baseadas em dados.
+                        Oferecemos ferramentas modernas e intuitivas que automatizam processos, promovem organização e aumentam a eficiência das instituições de ensino.
+                        Além disso, o Educi apoia a inclusão digital e a democratização do acesso à tecnologia, preparando escolas para os desafios do século XXI.
+                        Mais do que um sistema, somos parceiros no desenvolvimento da educação com inovação e excelência.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="service" class="services white-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Serviços</h2>
+                <p>
+                    Oferecemos soluções inovadoras e personalizadas para atender às suas necessidades. Nossos serviços são projetados para garantir a excelência e ajudar sua empresa a alcançar novos patamares de sucesso.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="row row-cols-1 row-cols-md-4 mb-4 text-center">
+
+                <!-- Service Item 1 -->
+                <div class="col">
+                    <div class="card mb-4 rounded-4 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Controle da Secretaria</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zM10 8a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1" />
+                                </svg>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Simplifique a gestão educacional com controle centralizado e mais eficiência.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Item 2 -->
+                <div class="col">
+                    <div class="card mb-4 rounded-4 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Controle Pedagógico</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zM10 8a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1" />
+                                </svg>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Gestão total de atividades pedagógicas, com foco na evolução acadêmica dos alunos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Item 3 -->
+                <div class="col">
+                    <div class="card mb-4 rounded-4 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Portal do Professor</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zM10 8a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1" />
+                                </svg>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Facilite o trabalho docente com ferramentas práticas e completas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Item 4 -->
+                <div class="col">
+                    <div class="card mb-4 rounded-4 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Portal do Aluno</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zM10 8a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1" />
+                                </svg>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Ofereça aos alunos acesso fácil a informações e progresso acadêmico.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Item 5 -->
+                <div class="col">
+                    <div class="card mb-4 rounded-4 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">BI Educação</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zM10 8a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1" />
+                                </svg>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Tome decisões estratégicas com dados poderosos e insights em tempo real.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Item 6 -->
+                <div class="col">
+                    <div class="card mb-4 rounded-4 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Assinatura Eletrônica</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zM10 8a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1" />
+                                </svg>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Reduza a burocracia com assinaturas digitais rápidas e seguras.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Item 7 -->
+                <div class="col">
+                    <div class="card mb-4 rounded-4 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Integração com OnService</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zM10 8a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1" />
+                                </svg>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Gerencie o transporte escolar de forma integrada e eficiente.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Item 8 -->
+                <div class="col">
+                    <div class="card mb-4 rounded-4 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Integração com o TCE-SE</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data-fill" viewBox="0 0 16 16">
+                                    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zM10 8a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1" />
+                                </svg>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Simplifique a prestação de contas com integração direta ao TCE-SE.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Services Section -->
+
+
+    <!-- ======= Produtos Section ======= -->
+    <section id="product" class="py-5 white-bg">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Carousel (Esquerda) -->
+                <div class="col-md-6">
+                    <div id="carouselProduto" class="swiper product-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="img/home.png" class="d-block w-100 card-img-fixed" alt="Screenshot 1">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="img/tutorial.png" class="d-block w-100 card-img-fixed" alt="Screenshot 2">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="img/professores.png" class="d-block w-100 card-img-fixed" alt="Screenshot 3">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="img/cardapio.png" class="d-block w-100 card-img-fixed" alt="Screenshot 4">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bolinhas de navegação -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <!-- Texto (Direita) -->
+                <div class="col-md-6">
+                    <h2 class="mb-4">Sobre o Sistema</h2>
+                    <p>
+                        Nosso sistema foi desenvolvido para revolucionar a gestão educacional, otimizando processos e centralizando tarefas de forma eficiente.
+                        Com uma interface intuitiva e funcionalidades inovadoras, oferecemos uma solução prática para escolas e instituições de ensino,
+                        conectando professores, alunos e gestores em uma experiência integrada e produtiva.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Produtos Section -->
+
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="depoiments" class="testimonials white-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Depoimentos</h2>
+                <p>
+                    Estamos sempre buscando melhorar e aprimorar nossos serviços, e os depoimentos dos clientes são uma forma valiosa de feedback para identificar pontos fortes e áreas de melhoria. Dessa forma, podemos continuar a oferecer soluções cada vez mais eficientes e personalizadas para atender às necessidades de cada cliente.
+                </p>
+            </div>
+
+            <!-- Testimonials Slider -->
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <!-- Testimonial Item 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img src="" class="testimonial-img" alt="">
+                                <h3>Sergio Barbosa</h3>
+                                <h4>CEO - I9TI</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    A minha história com o David começou com uma relação de professor e aluno há quase uma década, quando recebeu um chamado para estágio na minha empresa denominada i9Ti, e assim iniciou sua carreira profissional como desenvolvedor. Era uma pequena empresa de tecnologia, mas já atendia um cliente gigante. Anos se passaram, suas asas bateram... e hoje ele é empreendedor e fundador da DL Info. Um empresa inovadora em solução de tecnologia da informação.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Item 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img src="" class="testimonial-img" alt="">
+                                <h3>Ativva Soluções Contábeis</h3>
+                                <h4>Empresa de Contabilidade</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Nós reconhecemos a importância de uma empresa estar presente no meio digital nos dias atuais. A DL veem sendo uma grande parceira, nos ajudando, nos ouvindo, nos trazendo inspirações, ideias e sugestões fundamentais para criarmos conteúdo. Assim podemos cuidar do Operacional com a tranquilidade de que nosso marketing digital está sendo cuidado e preparado para que em médio prazo nossa marca alcance novos empresários.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial Item 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img src="" class="testimonial-img" alt="">
+                                <h3>Ativva Soluções Contábeis</h3>
+                                <h4>Empresa de Contabilidade</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Nós reconhecemos a importância de uma empresa estar presente no meio digital nos dias atuais. A DL veem sendo uma grande parceira, nos ajudando, nos ouvindo, nos trazendo inspirações, ideias e sugestões fundamentais para criarmos conteúdo. Assim podemos cuidar do Operacional com a tranquilidade de que nosso marketing digital está sendo cuidado e preparado para que em médio prazo nossa marca alcance novos empresários.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial Item 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img src="" class="testimonial-img" alt="">
+                                <h3>Ativva Soluções Contábeis</h3>
+                                <h4>Empresa de Contabilidade</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Nós reconhecemos a importância de uma empresa estar presente no meio digital nos dias atuais. A DL veem sendo uma grande parceira, nos ajudando, nos ouvindo, nos trazendo inspirações, ideias e sugestões fundamentais para criarmos conteúdo. Assim podemos cuidar do Operacional com a tranquilidade de que nosso marketing digital está sendo cuidado e preparado para que em médio prazo nossa marca alcance novos empresários.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial Item 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <img src="" class="testimonial-img" alt="">
+                                <h3>Ativva Soluções Contábeis</h3>
+                                <h4>Empresa de Contabilidade</h4>
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Nós reconhecemos a importância de uma empresa estar presente no meio digital nos dias atuais. A DL veem sendo uma grande parceira, nos ajudando, nos ouvindo, nos trazendo inspirações, ideias e sugestões fundamentais para criarmos conteúdo. Assim podemos cuidar do Operacional com a tranquilidade de que nosso marketing digital está sendo cuidado e preparado para que em médio prazo nossa marca alcance novos empresários.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim de Testimonial Items -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Fim do Testimonials Slider -->
+        </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+
+
+    <section id="contact">
+        <footer class="footer pos-r grey-bg bg-contain bg-pos-lt">
+            <div class="primary-footer">
+                <div class="container">
+                    <div class="row">
+                        <!-- Coluna 1: Logo -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-logo">
+                                <img id="footer-logo-img" src="img/Educi.png" class="img-center" alt="Logo">
+                            </div>
+                            <!--<p class="mb-0"></p>-->
+                        </div>
+
+                        <!-- Coluna 2: Navegação -->
+                        <div class="col-lg-4 col-md-6 pl-md-5 sm-mt-5">
+                            <h5 class="footer-title"><b>Navegação</b></h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#home">Início</a></li>
+                                <li><a href="#about">Sobre</a></li>
+                                <li><a href="#service">Serviços</a></li>
+                                <li><a href="#product">Produto</a></li>
+                                <li><a href="#depoiments">Depoimentos</a></li>
+                                <li><a href="#contact">Contato</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Coluna 3: Contato -->
+                        <div class="col-lg-4 col-md-12 md-mt-5">
+                            <h5 class="footer-title"><b>Contato</b></h5>
+                            <ul class="media-icon list-unstyled">
+                                <li>
+                                    <p class="mb-0">
+                                        Endereço: <b>Avenida Pedro Paes de Azevedo 225, Salgado Filho, Aracaju SE, 49020-450</b>
+                                    </p>
+                                </li>
+                                <li>
+                                    E-mail: <a href="comercial@dlinfo.dev.brr"><b>comercial@dlinfo.dev.br</b></a>
+                                </li>
+                                <li>
+                                    WhatsApp: <a href="tel:+557999823-9167"><b>+55 79 99823-9167</b></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Secundário -->
+            <div class="secondary-footer">
+                <div class="container">
+                    <div class="copyright">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8 col-md-12">
+                                <span>&copy; 2024 Design By <u><a href="https://dlinfo.dev.br/#" target="_blank">By DL Info - Desenvolvendo Solucões</a></u>.</span>
+                            </div>
+                            <div class="col-lg-4 col-md-12 text-lg-right md-mt-3">
+                                <div class="footer-social">
+                                    <ul class="list-inline">
+                                        <li class="mr-2">
+                                            <a href="https://www.instagram.com/dlinfoo/" class="social-link">
+                                                <ion-icon name="logo-instagram"></ion-icon>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Carrossel de Produtos
+            new Swiper('.product-slider', {
+                loop: true, // Ativa o loop infinito
+                spaceBetween: 30, // Define o espaçamento entre os slides (em pixels)
+                slidesPerView: 1, // Define 1 slide visível ao mesmo tempo, independentemente do tamanho da tela
+                autoplay: {
+                    delay: 5000, // Troca automática a cada 5 segundos
+                    disableOnInteraction: false, // Continua o autoplay mesmo após interação
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true, // Permite que o usuário clique nas bolinhas para navegar
+                },
+                breakpoints: {
+                    // Configurações responsivas para diferentes tamanhos de tela
+                    0: {
+                        slidesPerView: 1, // Em telas pequenas, exibe 1 slide por vez
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 1, // Em tablets, exibe 1 slide por vez
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 1, // Em desktops, exibe 1 slide por vez
+                        spaceBetween: 30,
+                    },
+                },
+            });
+
+            // Swiper para Depoimentos
+            new Swiper('.testimonials-slider', {
+                loop: true, // Ativa o loop infinito
+                spaceBetween: 30, // Define o espaçamento entre os slides (em pixels)
+                slidesPerView: 3, // Define 3 slides visíveis ao mesmo tempo
+                autoplay: {
+                    delay: 5000, // Troca automática a cada 5 segundos
+                    disableOnInteraction: false, // Continua o autoplay mesmo após interação
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1, // Em telas pequenas, exibe 1 slide por vez
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 2, // Em tablets, exibe 2 slides por vez
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3, // Em desktops, exibe 3 slides por vez
+                        spaceBetween: 30,
+                    },
+                },
+            });
+
+            // Swiper para Parceiros
+            new Swiper('.parceiros-slider', {
+                loop: true, // Ativa o loop infinito
+                spaceBetween: 30, // Define o espaçamento entre os slides (em pixels)
+                slidesPerView: 3, // Define 3 slides visíveis ao mesmo tempo
+                autoplay: {
+                    delay: 5000, // Troca automática a cada 5 segundos
+                    disableOnInteraction: false, // Continua o autoplay mesmo após interação
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1, // Em telas pequenas, exibe 1 slide por vez
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 2, // Em tablets, exibe 2 slides por vez
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3, // Em desktops, exibe 3 slides por vez
+                        spaceBetween: 30,
+                    },
+                },
+            });
+        });
+    </script>
+
+    <script>
+        // Mostrar/esconder o botão de voltar ao topo
+        const backToTopButton = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                backToTopButton.classList.add('active');
+            } else {
+                backToTopButton.classList.remove('active');
+            }
+        });
+
+        // Rolar suavemente para o topo ao clicar
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
