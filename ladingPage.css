@@ -202,6 +202,7 @@
       flex-direction: column;
       width: 100%;
       gap: 10px;
+      align-items: flex-end; /* Alinha os itens à direita */
   }
 
   .navbar-nav .nav-link {
@@ -258,37 +259,75 @@
 /* Responsividade para Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
   .navbar {
-      padding: 15px 25px; /* Ajusta o padding para dar mais espaço */
-      height: 80px; /* Ajusta a altura */
+      padding: 20px;
+      height: auto; /* Ajusta a altura da navbar conforme necessário */
   }
 
   .navbar-nav {
-      flex-direction: row; /* Os itens da navbar ficam em linha */
-      justify-content: space-between; /* Distribui os itens igualmente */
-      gap: 15px; /* Espaço entre os itens */
+      flex-direction: column; /* Coloca os itens um em cima do outro */
+      align-items: center; /* Centraliza os itens na coluna */
+      justify-content: center; /* Centraliza os itens verticalmente */
+      gap: 10px; /* Espaçamento entre os links */
   }
 
   .navbar-nav .nav-link {
-      padding: 8px 16px; /* Ajusta o padding dos links */
-      font-size: 1em; /* Tamanho da fonte para ficar legível em tablets */
+      padding: 10px 20px; /* Mantém o padding atual dos links */
+      font-size: 1em; /* Tamanho da fonte */
+      color: #1c1d3e; /* Cor do link */
+      font-weight: 500;
+      text-transform: capitalize;
+      position: relative;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-item .nav-link.active {
+      color: #FFC107; /* Cor de destaque */
   }
 
   .navbar-nav .nav-link::before {
-      font-size: 1.5em; /* Ajusta o tamanho das bolinhas para telas de tablet */
+      position: absolute;
+      bottom: -10%;
+      left: 50%;
+      color: transparent;
+      content: '.';
+      text-shadow: 0 0 transparent;
+      font-size: 2em;
+      transition: text-shadow 0.3s, color 0.3s;
+      transform: translateX(-50%);
+      pointer-events: none;
+      animation: opacitychange 1s ease-in-out infinite;
   }
 
   .navbar-nav .nav-link:hover::before,
-  .navbar-nav .nav-item .nav-link.active::before {
-      color: #FFC107; /* Mantenha a cor do hover/ativo */
-      text-shadow: none; /* Remove sombra para não sobrecarregar a interface */
+  .navbar-nav .nav-item .nav-link.active::before,
+  .navbar-nav .nav-link:focus::before {
+      color: #FFC107;
+      text-shadow: 10px 0 #1c1d3e, -10px 0 #1c1d3e;
   }
 
-  /* Mover o botão de hambúrguer para o lado direito */
+  /* Para Navbar com fundo claro */
+  .header-3 .navbar-nav .nav-link {
+      color: #ffffff;
+  }
+
+  .header-3 .navbar-nav .nav-link:hover,
+  .header-3 .navbar-nav .nav-item .nav-link.active {
+      color: #ffffff;
+  }
+
+  .header-3 .navbar-nav .nav-link:hover::before,
+  .header-3 .navbar-nav .nav-item .nav-link.active::before,
+  .header-3 .navbar-nav .nav-link:focus::before {
+      color: #ffffff;
+  }
+  
+  /* Movendo o botão de hambúrguer para o lado direito */
   .navbar-toggler {
-    margin-left: auto; /* Empurra o botão para o lado direito */
-    margin-right: 10px; /* Ajusta o espaço à direita, se necessário */
+    margin-left: auto;
+    margin-right: 10px;
   }
 }
+
 
 /* ============================= */
 /* CABEÇALHO E NAVBAR */
