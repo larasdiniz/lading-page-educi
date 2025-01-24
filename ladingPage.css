@@ -185,34 +185,54 @@
 /* Navbar em telas menores */
 @media (max-width: 768px) {
   .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-      height: auto; /* Altura ajustável */
+      display: flex;
+      flex-direction: row; /* Alinha os itens em linha */
+      justify-content: space-between; /* Espaço entre os itens */
+      align-items: center;
       padding: 10px 20px;
   }
 
+  .navbar-toggler {
+    order: 2; /* Coloca o botão de hambúrguer à direita */
+    margin-left: auto; /* Empurra o botão de hambúrguer para a direita */
+  }
+
   .navbar-nav {
-      flex-direction: column; /* Itens em coluna */
-      width: 100%; /* Ocupa toda a largura */
+      display: flex;
+      flex-direction: column;
+      width: 100%;
       gap: 10px;
   }
 
-      .navbar-nav .nav-link {
-          padding: 10px;
-          width: 100%; /* Links ocupam toda a largura */
-          text-align: left;
-      }
+  .navbar-nav .nav-link {
+      padding: 10px;
+      width: 100%; /* Links ocupam toda a largura */
+      text-align: left;
+  }
 
-          /* Ajusta as bolinhas abaixo dos links */
-          .navbar-nav .nav-link::before {
-              bottom: -1px; /* Aproxima mais as bolinhas dos links */
-              font-size: 1.2em; /* Ajusta o tamanho das bolinhas */
-          }
+  /* Ajusta as bolinhas abaixo dos links */
+  .navbar-nav .nav-link::before {
+      bottom: -1px;
+      font-size: 1.2em;
+  }
 
-          .navbar-nav .nav-link:hover::before,
-          .navbar-nav .nav-item .nav-link.active::before {
-              text-shadow: none; /* Remove sombra em telas pequenas */
-          }
+  .navbar-nav .nav-link:hover::before,
+  .navbar-nav .nav-item .nav-link.active::before {
+      text-shadow: none; /* Remove sombra em telas pequenas */
+  }
+
+  /* Ajusta o contêiner para os botões estarem à direita */
+  #header-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+
+  .btn {
+      margin-left: 10px; /* Adiciona espaço entre o botão "Acessar" e os outros itens */
+      order: 3; /* Garante que o botão "Acessar" ficará no final */
+  }
 }
 
 /* Navbar em telas ainda menores */
@@ -229,13 +249,46 @@
       font-size: 0.9em; /* Reduz tamanho da fonte */
   }
 
-      /* Ajusta as bolinhas para telas muito pequenas */
-      .navbar-nav .nav-link::before {
-          bottom: 0; /* Encosta totalmente nas links */
-          font-size: 1em; /* Reduz o tamanho das bolinhas */
-      }
+  /* Ajusta as bolinhas para telas muito pequenas */
+  .navbar-nav .nav-link::before {
+      bottom: 0;
+      font-size: 1em; /* Reduz o tamanho das bolinhas */
+  }
 }
+/* Responsividade para Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+      padding: 15px 25px; /* Ajusta o padding para dar mais espaço */
+      height: 80px; /* Ajusta a altura */
+  }
 
+  .navbar-nav {
+      flex-direction: row; /* Os itens da navbar ficam em linha */
+      justify-content: space-between; /* Distribui os itens igualmente */
+      gap: 15px; /* Espaço entre os itens */
+  }
+
+  .navbar-nav .nav-link {
+      padding: 8px 16px; /* Ajusta o padding dos links */
+      font-size: 1em; /* Tamanho da fonte para ficar legível em tablets */
+  }
+
+  .navbar-nav .nav-link::before {
+      font-size: 1.5em; /* Ajusta o tamanho das bolinhas para telas de tablet */
+  }
+
+  .navbar-nav .nav-link:hover::before,
+  .navbar-nav .nav-item .nav-link.active::before {
+      color: #FFC107; /* Mantenha a cor do hover/ativo */
+      text-shadow: none; /* Remove sombra para não sobrecarregar a interface */
+  }
+
+  /* Mover o botão de hambúrguer para o lado direito */
+  .navbar-toggler {
+    margin-left: auto; /* Empurra o botão para o lado direito */
+    margin-right: 10px; /* Ajusta o espaço à direita, se necessário */
+  }
+}
 
 /* ============================= */
 /* CABEÇALHO E NAVBAR */
@@ -885,6 +938,8 @@ section {
   position: relative;
   background: #fff;
   border-radius: 15px;
+  min-height: 500px;
+  height: 500px;
 }
 
   .testimonials .testimonial-item .testimonial-img {
@@ -979,6 +1034,7 @@ section {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra mais forte na parte direita e inferior */
       transform: translateZ(0); /* Garante que o card é renderizado no eixo Z */
+      height: 350px;
   }
 
   .services .card-header {
@@ -991,7 +1047,7 @@ section {
   }
 
   .services .card-body {
-      padding: 20px;
+      padding: 40px;
       background-color: white;
       text-align: center;
       border-radius: 0 0 30px 30px; /* Aplica o arredondamento na parte inferior */
